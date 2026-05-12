@@ -8,13 +8,13 @@ b = float(input("Ingresa el segundo número: "))
 op= input("Ingresa la operación (+, -, *, /): ").strip()
 
 if op == "+":
-    resultado = cliente.suma(a, b)
+    resultado = cliente.sumar(a, b)
 elif op == "-":
-    resultado = cliente.resta(a, b)
+    resultado = cliente.restar(a, b)
 elif op == "*":
-    resultado = cliente.multiplicacion(a, b)
+    resultado = cliente.multiplicar(a, b)
 elif op == "/":
-    resultado = cliente.division(a, b)
+    resultado = cliente.dividir(a, b)
 else:
     print("Operación no válida.")
     exit()

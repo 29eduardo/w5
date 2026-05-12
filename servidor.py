@@ -19,7 +19,7 @@ def dividir (a,b):
        return None
 
 #Crear el servidor  
-servidor = SimpleXMLRPCServer(("0.0.0.0", 8000))
+servidor = SimpleXMLRPCServer(("localhost", 8000))
 
 #Publicar las funciones para poder ser llamadas
 
