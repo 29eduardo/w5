@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+service Calculadora{
+    rpc sumar (Operacion) returns (Resultado);
+    rpc restar (Operacion) returns (Resultado);
+    rpc multiplicar (Operacion) returns (Resultado);
+    rpc dividir (Operacion) returns (Resultado);
+}
+
+message Operacion {
+    int32 a = 1;
+    int32 b = 2;
+}
+
+message Resultado {
+    int32 resultado = 1;
+}
